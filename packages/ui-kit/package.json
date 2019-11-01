@@ -5,7 +5,7 @@
   "keywords": [],
   "author": "ify <ifeanyioraelosi@gmail.com>",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "directories": {
     "lib": "src",
     "test": "__tests__"
@@ -17,8 +17,8 @@
     "access": "public"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --hot --mode development",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --open --hot --mode=development",
+    "build": "webpack --mode=production"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

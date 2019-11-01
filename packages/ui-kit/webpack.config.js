@@ -37,6 +37,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: 'index.js',
+    library: 'ui-kit',
+    libraryTarget: 'commonjs'
   },
   devServer: {
     contentBase: './dist'
