@@ -36,9 +36,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'index.js',
-    library: 'ui-kit',
-    libraryTarget: 'commonjs'
+    filename: 'bundle.js'
   },
   devServer: {
     contentBase: './dist'

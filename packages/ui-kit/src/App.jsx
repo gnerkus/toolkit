@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../src/Button';
+import Button from './lib/elements/Button';
 
 const App = () => (
   <Button />
