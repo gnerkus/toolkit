@@ -1,0 +1,63 @@
+:root {
+    --g-size: 16px;
+    --g-size-xxl: calc(var(--g-size) * 2.5);
+    --g-size-xl: calc(var(--g-size) * 2);
+    --g-size-xs: calc(var(--g-size) * .25);
+    --g-button-min-width: calc(var(--g-size) * 7);
+
+    /* core colours */
+    --g-color-primary: #216583;
+    --g-color-primary-transparent-1: #2165831A;
+    --g-color-primary-darken-1: #1f5f7c;
+    --g-color-secondary: #293462;
+    --g-color-secondary-transparent-1: #2934621A;
+    --g-color-secondary-darken-1: #26315D;
+
+    /* status */
+    --g-color-danger: #F76262;
+    --g-color-danger-transparent-1: #F762621A;
+    --g-color-danger-darken-1: #F65151;
+    --g-color-success: var(--g-color-secondary);
+    --g-color-warning: #FFF1C1;
+    --g-color-warning-transparent-1: #FFF1C11A;
+    --g-color-warning-darken-1: #FFEBAA;
+    --g-color-warning-darken-5: #E0AD00;
+
+    /* neutral colours */
+    --g-color-ghost: #FFF;
+    --g-color-ghost-transparent-1: #FFFFFF1A;
+    --g-color-ghost-darken-1: #F2F2F2;
+    --g-color-ink: #000;
+
+    /* grays colour */
+    --g-color-empty-shade: #FFF;
+    --g-color-darkest-shade: #343741;
+    --g-color-dark-shade: #69707D;
+    --g-color-medium-shade: #98A2B3;
+    --g-text-color: var(--g-color-darkest-shade);
+    --g-color-text: var(--g-color-dark-shade);
+    --g-color-text-transparent-1: #69707D1A;
+    --g-color-text-darken-1: #636A76;
+
+    /* button colours */
+    --g-button-color-disabled: var(--g-color-medium-shade); /* TODO: tint this */
+
+    /* sizes */
+    --g-button-height: var(--g-size-xxl);
+    --g-button-height-small: var(--g-size-xl);
+
+    /* animations */
+    --g-anim-speed-normal: 250ms;
+    --g-anim-slight-bounce: cubic-bezier(.34, 1.61, .7, 1);
+
+    /* shadows */
+    --g-shadow-color: var(--g-color-medium-shade);
+    --g-shadow-color-transparent-1: #98A2B326; /* 15% opacity */
+    --g-shadow-color-transparent-2: #98A2B34D; /* 30% opacity */
+    --g-slight-shadow: 0 2px 2px -1px var(--g-shadow-color-transparent-2);
+    --g-slight-shadow-hover: 0 4px 8px 0 var(--g-shadow-color-transparent-1),
+        var(--g-slight-shadow);
+
+    /* borders */
+    --g-border-radius: 4px;
+}
