@@ -1,7 +1,5 @@
-import React from 'react';
+import Button from './Button'
 
-const Button = (props) => (
-  <button type="button">Simple button</button>
-);
-
-export default Button;
+export default {
+  Button
+}
