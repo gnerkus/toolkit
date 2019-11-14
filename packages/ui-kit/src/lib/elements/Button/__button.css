@@ -51,6 +51,7 @@
 
 .gButton:disabled.gButton--fill {
     background-color: var(--g-button-color-disabled);
+    border-color: var(--g-button-color-disabled);
 }
 
 .gButton:disabled:hover, .gButton:disabled:focus {
@@ -60,157 +61,157 @@
 
 /* BUTTON COLOURS */
 /* primary */
-.gButton.gButton--primary {
+.gButton--primary {
     color: var(--g-color-primary);
     border-color: var(--g-color-primary);
 }
 
-.gButton.gButton--primary.gButton--fill {
+.gButton--primary.gButton--fill {
     background-color: var(--g-color-primary);
     border-color: var(--g-color-primary);
     color: var(--g-color-empty-shade);
 }
 
-.gButton.gButton--primary.gButton--fill:enabled:hover, .gButton.gButton--primary.gButton--fill:enabled:focus {
+.gButton--primary.gButton--fill:enabled:hover, .gButton.gButton--primary.gButton--fill:enabled:focus {
     background-color: var(--g-color-primary-darken-1);
     border-color: var(--g-color-primary-darken-1);
 }
 
-.gButton.gButton--primary:enabled {
+.gButton--primary:enabled {
     box-shadow: var(--g-slight-shadow);
 }
 
-.gButton.gButton--primary:enabled:hover, .gButton.gButton--primary:enabled:focus {
+.gButton--primary:enabled:hover, .gButton.gButton--primary:enabled:focus {
     box-shadow: var(--g-slight-shadow-hover);
     background-color: var(--g-color-primary-transparent-1);
 }
 
 /* secondary */
-.gButton.gButton--secondary {
+.gButton--secondary {
     color: var(--g-color-secondary);
     border-color: var(--g-color-secondary);
 }
 
-.gButton.gButton--secondary.gButton--fill {
+.gButton--secondary.gButton--fill {
     background-color: var(--g-color-secondary);
     border-color: var(--g-color-secondary);
     color: var(--g-color-empty-shade);
 }
 
-.gButton.gButton--secondary.gButton--fill:enabled:hover, .gButton.gButton--secondary.gButton--fill:enabled:focus {
+.gButton--secondary.gButton--fill:enabled:hover, .gButton.gButton--secondary.gButton--fill:enabled:focus {
     background-color: var(--g-color-secondary-darken-1);
     border-color: var(--g-color-secondary-darken-1);
 }
 
-.gButton.gButton--secondary:enabled {
+.gButton--secondary:enabled {
     box-shadow: var(--g-slight-shadow);
 }
 
-.gButton.gButton--secondary:enabled:hover, .gButton.gButton--secondary:enabled:focus {
+.gButton--secondary:enabled:hover, .gButton.gButton--secondary:enabled:focus {
     box-shadow: var(--g-slight-shadow-hover);
     background-color: var(--g-color-secondary-transparent-1);
 }
 
 /* warning */
-.gButton.gButton--warning {
+.gButton--warning {
     color: var(--g-color-warning-darken-5);
     border-color: var(--g-color-warning);
 }
 
-.gButton.gButton--warning.gButton--fill {
+.gButton--warning.gButton--fill {
     background-color: var(--g-color-warning);
     border-color: var(--g-color-warning);
     color: var(--g-color-darkest-shade);
 }
 
-.gButton.gButton--warning.gButton--fill:enabled:hover, .gButton.gButton--warning.gButton--fill:enabled:focus {
+.gButton--warning.gButton--fill:enabled:hover, .gButton.gButton--warning.gButton--fill:enabled:focus {
     background-color: var(--g-color-warning-darken-1);
     border-color: var(--g-color-warning-darken-1);
 }
 
-.gButton.gButton--warning:enabled {
+.gButton--warning:enabled {
     box-shadow: var(--g-slight-shadow);
 }
 
-.gButton.gButton--warning:enabled:hover, .gButton.gButton--warning:enabled:focus {
+.gButton--warning:enabled:hover, .gButton.gButton--warning:enabled:focus {
     box-shadow: var(--g-slight-shadow-hover);
     background-color: var(--g-color-warning-transparent-1);
 }
 
 /* danger */
-.gButton.gButton--danger {
+.gButton--danger {
     color: var(--g-color-danger);
     border-color: var(--g-color-danger);
 }
 
-.gButton.gButton--danger.gButton--fill {
+.gButton--danger.gButton--fill {
     background-color: var(--g-color-danger);
     border-color: var(--g-color-danger);
     color: var(--g-color-empty-shade);
 }
 
-.gButton.gButton--danger.gButton--fill:enabled:hover, .gButton.gButton--danger.gButton--fill:enabled:focus {
+.gButton--danger.gButton--fill:enabled:hover, .gButton.gButton--danger.gButton--fill:enabled:focus {
     background-color: var(--g-color-danger-darken-1);
     border-color: var(--g-color-danger-darken-1);
 }
 
-.gButton.gButton--danger:enabled {
+.gButton--danger:enabled {
     box-shadow: var(--g-slight-shadow);
 }
 
-.gButton.gButton--danger:enabled:hover, .gButton.gButton--danger:enabled:focus {
+.gButton--danger:enabled:hover, .gButton.gButton--danger:enabled:focus {
     box-shadow: var(--g-slight-shadow-hover);
     background-color: var(--g-color-danger-transparent-1);
 }
 
 /* ghost */
-.gButton.gButton--ghost {
+.gButton--ghost {
     color: var(--g-color-ghost);
     border-color: var(--g-color-ghost);
 }
 
-.gButton.gButton--ghost.gButton--fill {
+.gButton--ghost.gButton--fill {
     background-color: var(--g-color-ghost);
     border-color: var(--g-color-ghost);
     color: var(--g-color-ink);
 }
 
-.gButton.gButton--ghost.gButton--fill:enabled:hover, .gButton.gButton--ghost.gButton--fill:enabled:focus {
+.gButton--ghost.gButton--fill:enabled:hover, .gButton.gButton--ghost.gButton--fill:enabled:focus {
     background-color: var(--g-color-ghost-darken-1);
     border-color: var(--g-color-ghost-darken-1);
 }
 
-.gButton.gButton--ghost:enabled {
+.gButton--ghost:enabled {
     box-shadow: var(--g-slight-shadow);
 }
 
-.gButton.gButton--ghost:enabled:hover, .gButton.gButton--ghost:enabled:focus {
+.gButton--ghost:enabled:hover, .gButton.gButton--ghost:enabled:focus {
     box-shadow: var(--g-slight-shadow-hover);
     background-color: var(--g-color-ghost-transparent-1);
 }
 
 /* text */
-.gButton.gButton--text {
+.gButton--text {
     color: var(--g-text-color);
     border-color: var(--g-color-text);
 }
 
-.gButton.gButton--text.gButton--fill {
+.gButton--text.gButton--fill {
     background-color: var(--g-color-text);
     border-color: var(--g-color-text);
     color: var(--g-color-empty-shade);
 }
 
-.gButton.gButton--text.gButton--fill:enabled:hover, .gButton.gButton--text.gButton--fill:enabled:focus {
+.gButton--text.gButton--fill:enabled:hover, .gButton.gButton--text.gButton--fill:enabled:focus {
     background-color: var(--g-color-text-darken-1);
     border-color: var(--g-color-text-darken-1);
 }
 
-.gButton.gButton--text:enabled {
+.gButton--text:enabled {
     box-shadow: var(--g-slight-shadow);
 }
 
-.gButton.gButton--text:enabled:hover, .gButton.gButton--text:enabled:focus {
+.gButton--text:enabled:hover, .gButton.gButton--text:enabled:focus {
     box-shadow: var(--g-slight-shadow-hover);
     background-color: var(--g-color-text-transparent-1);
 }
