@@ -1,0 +1,17 @@
+/* Base mixin for buttons */
+.gButton {
+    display: inline-block;
+    appearance: none;
+    /* to be wrapped with auto-prefixer */
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: var(--g-button-height);
+    line-height: var(--g-button-height);
+    text-decoration: none;
+    border: solid 1px transparent;
+    text-align: center;
+    white-space: nowrap;
+    max-width: 100%;
+    vertical-align: middle;
+    box-shadow: 0 2px 2px -1px rgba(var(--g-shadow-color, .3));
+}
