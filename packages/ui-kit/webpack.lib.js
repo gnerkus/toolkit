@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'production',
@@ -11,11 +12,10 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/i,
         use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
+          MiniCssExtractPlugin.loader,
+          'css-loader'
         ]
       }
     ]
@@ -23,12 +23,17 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
-  plugins: [],
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    })
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: 'index.js',
     library: 'ui-kit',
     libraryTarget: 'umd'
-  }
+  },
+  externals: ['react', 'react-dom']
 };
