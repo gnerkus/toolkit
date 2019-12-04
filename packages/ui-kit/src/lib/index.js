@@ -1,6 +1,3 @@
+import './main.css'
 // Elements
-import Button from './elements/Button'
-
-export default {
-  Button,
-}
+export { default as Button } from './elements/Button'

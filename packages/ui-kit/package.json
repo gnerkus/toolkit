@@ -1,6 +1,6 @@
 {
   "name": "ui-kit",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "ify <ifeanyioraelosi@gmail.com>",
@@ -27,6 +27,7 @@
     "css-loader": "^3.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "0.8.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "sass-loader": "^8.0.0",
