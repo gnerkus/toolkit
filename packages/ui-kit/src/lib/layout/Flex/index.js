@@ -1,5 +1,7 @@
-import FlexGroup from './FlexGroup'
+import FlexGroup from './FlexGroup';
+import FlexItem from './FlexItem';
 
 export default {
-  FlexGroup
+  FlexGroup,
+  FlexItem
 }
