@@ -1,0 +1,136 @@
+@import './../../global_styles/variables.css';
+
+.gFlexGroup {
+  display: flex;
+  align-items: stretch;
+}
+
+.gFlexGroup .gFlexItem {
+  flex-grow: 1;
+  flex-basis: 0%;
+}
+
+/* GUTTER SIZES */
+/* extra small */
+.gFlexGroup--gutterXS {
+  margin: calc(var(--g-size-xs) * .5 * -1);
+}
+
+.gFlexGroup--gutterXS > .gFlexItem{
+  margin: calc(var(--g-size-xs) * .5);
+}
+
+/* small */
+.gFlexGroup--gutterS {
+  margin: calc(var(--g-size-s) * .5 * -1);
+}
+
+.gFlexGroup--gutterS > .gFlexItem{
+  margin: calc(var(--g-size-s) * .5);
+}
+
+/* medium */
+.gFlexGroup--gutterM {
+  margin: calc(var(--g-size-m) * .5 * -1);
+}
+
+.gFlexGroup--gutterM > .gFlexItem{
+  margin: calc(var(--g-size-m) * .5);
+}
+
+/* large */
+.gFlexGroup--gutterL {
+  margin: calc(var(--g-size-l) * .5 * -1);
+}
+
+.gFlexGroup--gutterL > .gFlexItem{
+  margin: calc(var(--g-size-l) * .5);
+}
+
+/* extra large */
+.gFlexGroup--gutterXL {
+  margin: calc(var(--g-size-xl) * .5 * -1);
+}
+
+.gFlexGroup--gutterXL > .gFlexItem{
+  margin: calc(var(--g-size-xl) * .5);
+}
+
+/* Justify grid */
+.gFlexGroup--justifyContentSpaceEvenly {
+  justify-content: space-evenly;
+}
+
+.gFlexGroup--justifyContentSpaceBetween {
+  justify-content: space-between;
+}
+
+.gFlexGroup--justifyContentSpaceAround {
+  justify-content: space-around;
+}
+
+.gFlexGroup--justifyContentCenter {
+  justify-content: center;
+}
+
+.gFlexGroup--justifyContentFlexEnd {
+  justify-content: flex-end;
+}
+
+/* Align items */
+.gFlexGroup--alignItemsFlexStart {
+  align-items: flex-start;
+}
+
+.gFlexGroup--alignItemsCenter {
+  align-items: center;
+}
+
+.gFlexGroup--alignItemsFlexEnd {
+  align-items: flex-end;
+}
+
+.gFlexGroup--alignItemsBaseline {
+  align-items: baseline;
+}
+
+/* Direction */
+.gFlexGroup--directionRow {
+  flex-direction: row;
+}
+
+.gFlexGroup--directionRowReverse {
+  flex-direction: row-reverse;
+}
+
+.gFlexGroup--directionColumn {
+  flex-direction: column;
+}
+
+.gFlexGroup--directionColumnReverse {
+  flex-direction: column-reverse;
+}
+
+/* Wrap */
+.gFlexGroup--wrap {
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+/* Extra small */
+@media (max-width: 575px) {
+  .gFlexGroup--responsive {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Small */
+@media (min-width: 576px) {
+  .gFlexGroup--responsive {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-// import Button from './lib/elements/Button';
 import { Button } from './lib';
+import { Flex } from './lib';
 
 const App = () => (
   <Button.Button
