@@ -118,7 +118,7 @@
 
 /* RESPONSIVE */
 /* Extra small */
-@media (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575px) {
   .gFlexGroup--responsive {
     flex-wrap: wrap;
     margin-left: 0;
@@ -127,7 +127,7 @@
 }
 
 /* Small */
-@media (min-width: 576px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .gFlexGroup--responsive {
     flex-wrap: wrap;
     margin-left: 0;
