@@ -34,7 +34,7 @@ const propTypes = {
   iconType: PropTypes.string,
   iconSide: PropTypes.oneOf(['left', 'right']),
   fill: PropTypes.bool,
-  color: PropTypes.string,
+  color: PropTypes.oneOf(BUTTON_COLORS),
   size: PropTypes.oneOf(['s', 'm']),
   isLoading: PropTypes.bool,
   isDisabled: PropTypes.bool,
