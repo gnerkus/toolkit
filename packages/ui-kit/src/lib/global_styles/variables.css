@@ -1,8 +1,13 @@
 :root {
     --g-size: 16px;
-    --g-size-xxl: calc(var(--g-size) * 2.5);
-    --g-size-xl: calc(var(--g-size) * 2);
+    
     --g-size-xs: calc(var(--g-size) * .25);
+    --g-size-s: calc(var(--g-size) * .5);
+    --g-size-m: calc(var(--g-size) * .75);
+    --g-size-l: calc(var(--g-size) * 1.5);
+    --g-size-xl: calc(var(--g-size) * 2);
+    --g-size-xxl: calc(var(--g-size) * 2.5);
+    
     --g-button-min-width: calc(var(--g-size) * 7);
 
     /* core colours */
