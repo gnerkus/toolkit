@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button } from './lib';
 import { Flex } from './lib';
+import { Form } from './lib';
+
+const inputRef = React.createRef();
 
 const App = () => (
   <React.Fragment>
@@ -36,6 +39,12 @@ const App = () => (
     >
       Warning
     </Button.Button>
+  </Flex.FlexItem>
+  <Flex.FlexItem>
+    <Form.TextField
+      placeholder="Test placeholder"
+      ref={inputRef}
+    />
   </Flex.FlexItem>
 </Flex.FlexGroup>
 <Flex.FlexGroup
