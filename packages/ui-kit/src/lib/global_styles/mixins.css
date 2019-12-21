@@ -1,0 +1,12 @@
+/* Font mixin */
+:-moz-any(.gButton, .gTextField) {
+  font-weight: var(--g-font-weight-regular);
+  letter-spacing: -.005em;
+}
+
+/* font size normal */
+:-moz-any(.gButton) {
+  font-size: var(--g-font-size);
+  font-size: 1rem;
+  line-height: var(--g-line-height);
+}

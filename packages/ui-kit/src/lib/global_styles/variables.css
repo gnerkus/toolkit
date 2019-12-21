@@ -46,6 +46,7 @@
 
     /* animations */
     --g-anim-speed-normal: 250ms;
+    --g-anim-speed-fast: 150ms;
     --g-anim-slight-bounce: cubic-bezier(.34, 1.61, .7, 1);
 
     /* shadows */
@@ -58,4 +59,29 @@
 
     /* borders */
     --g-border-radius: 4px;
+
+    /* FORM */
+    /* sizes */
+    --g-form-max-width: calc(var(--g-size-xl) * 10); /* 400px */
+    --g-form-control-height: var(--g-size-m);
+    --g-form-control-padding: var(--g-size-m);
+
+    /* colors */
+    --g-form-background-color: #fbfcfd;
+    --g-form-border-color: var(--g-shadow-color-transparent-1);
+    --g-form-control-disabled-color: var(--g-color-medium-shade);
+    --g-form-background-disabled-color: var(--g-color-medium-shade);
+    --g-form-background-readonly-color: var(--g-color-text-transparent-1);
+    --g-form-border-disabled-color: var(--g-form-border-color);
+
+    /* shadows */
+    --g-form-control-box-shadow: 0 1px 1px -1px var(--g-shadow-color-transparent-1),
+        0 3px 2px -2px var(--g-shadow-color-transparent-1);
+
+    /* FONT */
+    /* sizes */
+    --g-line-height: 1.5;
+    --g-font-size: var(--g-size);
+    --g-font-size-s: calc(var(--g-size) * 0.875); /* 14px */
+    --g-font-weight-regular: 400;
 }
