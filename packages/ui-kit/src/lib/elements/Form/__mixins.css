@@ -1,0 +1,79 @@
+:-moz-any(.gTextField) {
+  /* form control size */
+  max-width: var(--g-form-max-width);
+  width: 100%;
+  height: var(--g-form-control-height);
+
+  /* form control default shadow */
+  background-color: var(--g-form-background-color);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  box-shadow: var(--g-form-control-box-shadow),
+    inset 0 0 0 1px var(--g-form-border-color);
+  transition: 
+    box-shadow var(--g-anim-speed-fast) ease-in,
+    background-image var(--g-anim-speed-fast) ease-in,
+    background-size var(--g-anim-speed-fast) ease-in,
+    background-color var(--g-anim-speed-fast) ease-in;
+
+  /* form control text */
+  font-size: var(--g-font-size-s);
+  line-height: 1em;
+  color: var(--g-text-color);
+
+  border: none;
+  border-radius: 0;
+  padding: var(--g-form-control-padding);
+}
+
+/* Placeholder styles */
+:-moz-any(.gTextField, .gTextField:disabled)::placeholder {
+  color: var(--g-color-dark-shade);
+}
+
+/* Full width styles */
+:-moz-any(.gTextField--fullWidth) {
+  max-width: 100%;
+}
+
+/* STATES */
+/* invalid */
+:-moz-any(.gTextField):invalid {
+  background-image: linear-gradient(to top,
+    var(--g-color-danger),
+    var(--g-color-danger) 2px,
+    transparent 2px,
+    transparent 100%
+  );
+  background-size: 100%;
+}
+
+/* focus */
+:-moz-any(.gTextField):focus {
+  background-color: var(--g-color-ghost-darken-1);
+  background-image: linear-gradient(to top,
+    var(--g-color-primary),
+    var(--g-color-primary) 2px,
+    transparent 2px,
+    transparent 100%
+  );
+  background-size: 100% 100%;
+  box-shadow: var(--g-form-control-box-shadow),
+    inset 0 0 0 1px var(--g-form-border-color);
+}
+
+/* disabled */
+:-moz-any(.gTextField):disabled {
+  cursor: not-allowed;
+  color: var(--g-form-control-disabled-color);
+  background: var(--g-form-background-disabled-color);
+  box-shadow: inset 0 0 0 1px var(--g-form-border-disabled-color);
+}
+
+/* readonly */
+:-moz-any(.gTextField):read-only {
+  cursor: default;
+  background: var();
+  border-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--g-form-border-disabled-color);
+}
