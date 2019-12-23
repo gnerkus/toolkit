@@ -46,6 +46,12 @@ const App = () => (
       ref={inputRef}
     />
   </Flex.FlexItem>
+  <Flex.FlexItem>
+    <Form.NumberField
+      placeholder={1}
+      ref={inputRef}
+    />
+  </Flex.FlexItem>
 </Flex.FlexGroup>
 <Flex.FlexGroup
   direction="row"

@@ -1,4 +1,4 @@
-:-moz-any(.gTextField) {
+:-moz-any(.gTextField, .gNumberField) {
   /* form control size */
   max-width: var(--g-form-max-width);
   width: 100%;
@@ -27,18 +27,24 @@
 }
 
 /* Placeholder styles */
-:-moz-any(.gTextField, .gTextField:disabled)::placeholder {
+:-moz-any(
+  .gTextField, .gTextField:disabled,
+  .gNumberField, .gNumberField:disabled
+)::placeholder {
   color: var(--g-color-dark-shade);
 }
 
 /* Full width styles */
-:-moz-any(.gTextField--fullWidth) {
+:-moz-any(
+  .gTextField--fullWidth,
+  .gNumberField--fullWidth
+) {
   max-width: 100%;
 }
 
 /* STATES */
 /* invalid */
-:-moz-any(.gTextField):invalid {
+:-moz-any(.gTextField, .gNumberField):invalid {
   background-image: linear-gradient(to top,
     var(--g-color-danger),
     var(--g-color-danger) 2px,
@@ -49,7 +55,7 @@
 }
 
 /* focus */
-:-moz-any(.gTextField):focus {
+:-moz-any(.gTextField, .gNumberField):focus {
   background-color: var(--g-color-ghost-darken-1);
   background-image: linear-gradient(to top,
     var(--g-color-primary),
@@ -63,7 +69,7 @@
 }
 
 /* disabled */
-:-moz-any(.gTextField):disabled {
+:-moz-any(.gTextField, .gNumberField):disabled {
   cursor: not-allowed;
   color: var(--g-form-control-disabled-color);
   background: var(--g-form-background-disabled-color);
@@ -71,7 +77,7 @@
 }
 
 /* readonly */
-:-moz-any(.gTextField):read-only {
+:-moz-any(.gTextField, .gNumberField):read-only {
   cursor: default;
   background: var();
   border-color: transparent;

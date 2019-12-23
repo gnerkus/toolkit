@@ -10,9 +10,12 @@ const propTypes = {
   id: PropTypes.string,
   fullWidth: PropTypes.bool,
   isInvalid: PropTypes.bool,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  step: PropTypes.number
 };
 
-const TextField = React.forwardRef(
+const NumberField = React.forwardRef(
   ({
     id,
     name,
@@ -22,26 +25,32 @@ const TextField = React.forwardRef(
     fullWidth = false,
     readOnly,
     isInvalid = false,
+    min,
+    max,
+    step,
     ...props
   },
   inputRef
 ) => {
   
   const classes = classNames(
-    'gTextField',
+    'gNumberField',
     className,
     {
-      'gTextField--fullWidth': fullWidth,
+      'gNumberField--fullWidth': fullWidth,
     }
   );
 
   return (
     <input
-      type="text"
+      type="number"
       id={id}
       name={name}
       placeholder={placeholder}
       value={value}
+      min={min}
+      max={max}
+      step={step}
       readOnly={readOnly}
       className={classes}
       ref={(elem) => {
@@ -52,7 +61,7 @@ const TextField = React.forwardRef(
   );
 });
 
-TextField.displayName = 'TextField';
-TextField.propTypes = propTypes;
+NumberField.displayName = 'NumberField';
+NumberField.propTypes = propTypes;
 
-export default TextField;
+export default NumberField;
