@@ -1,5 +1,5 @@
 /* Font mixin */
-:-moz-any(.gButton, .gTextField) {
+:-moz-any(.gButton, .gTextField, .gNumberField, .gSelect) {
   font-weight: var(--g-font-weight-regular);
   letter-spacing: -.005em;
 }

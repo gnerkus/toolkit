@@ -1,0 +1,9 @@
+.gSelect {
+  /* TODO: Add caret */
+  /* appearance: none; */
+  /* -moz-appearance: none; */
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: var(--g-line-height);
+  height: var(--g-size-xl);
+}
