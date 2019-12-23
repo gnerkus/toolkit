@@ -1,0 +1,19 @@
+.gTextArea {
+  height: auto;
+}
+
+.gTextArea--resizeVertical {
+  resize: vertical;
+}
+
+.gTextArea--resizeHorizontal {
+  resize: horizontal;
+}
+
+.gTextArea--resizeBoth {
+  resize: both;
+}
+
+.gTextArea--resizeNone {
+  resize: none;
+}

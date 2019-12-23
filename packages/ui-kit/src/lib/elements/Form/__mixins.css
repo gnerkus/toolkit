@@ -1,4 +1,4 @@
-:-moz-any(.gTextField, .gNumberField, .gSelect) {
+:-moz-any(.gTextField, .gNumberField, .gSelect, .gTextArea) {
   /* form control size */
   max-width: var(--g-form-max-width);
   width: 100%;
@@ -30,7 +30,8 @@
 :-moz-any(
   .gTextField, .gTextField:disabled,
   .gNumberField, .gNumberField:disabled,
-  .gSelect, .gSelect:disabled
+  .gSelect, .gSelect:disabled,
+  .gTextArea, .gTextArea:disabled
 )::placeholder {
   color: var(--g-color-dark-shade);
 }
@@ -39,14 +40,18 @@
 :-moz-any(
   .gTextField--fullWidth,
   .gNumberField--fullWidth,
-  .gSelect--fullWidth
+  .gSelect--fullWidth,
+  .gTextArea--fullWidth
 ) {
   max-width: 100%;
 }
 
 /* STATES */
 /* invalid */
-:-moz-any(.gTextField, .gNumberField, .gSelect):invalid {
+:-moz-any(
+  .gTextField, .gNumberField, .gSelect,
+  .gTextArea
+):invalid {
   background-image: linear-gradient(to top,
     var(--g-color-danger),
     var(--g-color-danger) 2px,
@@ -57,7 +62,10 @@
 }
 
 /* focus */
-:-moz-any(.gTextField, .gNumberField, .gSelect):focus {
+:-moz-any(
+  .gTextField, .gNumberField, .gSelect,
+  .gTextArea
+):focus {
   background-color: var(--g-form-background-color);
   background-image: linear-gradient(to top,
     var(--g-color-primary),
@@ -71,7 +79,10 @@
 }
 
 /* disabled */
-:-moz-any(.gTextField, .gNumberField, .gSelect):disabled {
+:-moz-any(
+  .gTextField, .gNumberField, .gSelect,
+  .gTextArea
+):disabled {
   cursor: not-allowed;
   color: var(--g-form-control-disabled-color);
   background: var(--g-form-background-disabled-color);
@@ -79,7 +90,10 @@
 }
 
 /* readonly */
-:-moz-any(.gTextField, .gNumberField, .gSelect):read-only {
+:-moz-any(
+  .gTextField, .gNumberField, .gSelect,
+  .gTextArea
+):read-only {
   cursor: default;
   background: var();
   border-color: transparent;

@@ -2,7 +2,6 @@ import React from 'react';
 import { Button } from './lib';
 import { Flex } from './lib';
 import { Form } from './lib';
-import Select from './lib/elements/Form/Select';
 
 const inputRef = React.createRef();
 
@@ -54,7 +53,7 @@ const App = () => (
     />
   </Flex.FlexItem>
   <Flex.FlexItem>
-    <Select
+    <Form.Select
       ref={inputRef}
       value="First"
       options={[
@@ -62,6 +61,14 @@ const App = () => (
         {text: 'Second', value: 'Second'}
       ]}
     />
+  </Flex.FlexItem>
+  <Flex.FlexItem>
+    <Form.TextArea
+      rows={3}
+      placeholder="Textarea placeholder"
+    >
+      Test text area text
+    </Form.TextArea>
   </Flex.FlexItem>
 </Flex.FlexGroup>
 <Flex.FlexGroup
