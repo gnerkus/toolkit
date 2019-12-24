@@ -1,0 +1,38 @@
+.gCheckbox {
+  position: relative;
+}
+
+.gCheckbox .gCheckbox__input {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+} 
+
+.gCheckbox .gCheckbox__input ~ .gCheckbox__label {
+  display: block;
+  padding-left: calc(var(--g-checkbox-size) * 1.5);
+  line-height: var(--g-size-l);
+  font-size: var(--g-font-size-s);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.gCheckbox .gCheckbox__input + .gCheckbox__square {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: calc(calc(calc(var(--g-size-l) - var(--g-checkbox-size)) / 2) - 1px);
+}
+
+.gCheckbox .gCheckbox__input[disabled] {
+  cursor: not-allowed;
+}
+
+.gCheckbox .gCheckbox__input[disabled] ~ .gCheckbox__label {
+  color: var(--g-form-control-disabled-color);
+  cursor: not-allowed;
+}

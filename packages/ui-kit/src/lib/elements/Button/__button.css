@@ -1,12 +1,7 @@
 @import './../../global_styles/variables.css';
+@import './../../global_styles/utility.css';
 @import './__variables.css';
 @import './__mixins.css';
-
-@keyframes gButtonActive {
-    50% {
-        transform: translateY(1px);
-    }
-}
 
 .gButton {
     border-radius: var(--g-border-radius);
