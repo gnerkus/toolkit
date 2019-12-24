@@ -41,6 +41,10 @@ const TextArea = React.forwardRef(
   },
   inputRef
 ) => {
+
+  React.useEffect(() => {
+    inputRef.current.setCustomValidity(isInvalid ? 'Invalid': '')
+  })
   
   const classes = classNames(
     'gTextArea',
@@ -59,9 +63,7 @@ const TextArea = React.forwardRef(
       className={classes}
       rows={rows}
       resize={resize}
-      ref={(elem) => {
-        elem.setCustomValidity(isInvalid ? 'Invalid' : '')
-      }}
+      ref={inputRef}
       {...props}
     >
       {children}

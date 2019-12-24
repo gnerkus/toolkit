@@ -33,6 +33,10 @@ const NumberField = React.forwardRef(
   inputRef
 ) => {
   
+  React.useEffect(() => {
+    inputRef.current.setCustomValidity(isInvalid ? 'Invalid': '')
+  })
+  
   const classes = classNames(
     'gNumberField',
     className,
@@ -53,9 +57,7 @@ const NumberField = React.forwardRef(
       step={step}
       readOnly={readOnly}
       className={classes}
-      ref={(elem) => {
-        elem.setCustomValidity(isInvalid ? 'Invalid' : '')
-      }}
+      ref={inputRef}
       {...props}
     />
   );

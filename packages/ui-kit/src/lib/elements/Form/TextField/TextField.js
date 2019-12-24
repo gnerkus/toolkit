@@ -26,6 +26,10 @@ const TextField = React.forwardRef(
   },
   inputRef
 ) => {
+
+  React.useEffect(() => {
+    inputRef.current.setCustomValidity(isInvalid ? 'Invalid': '')
+  })
   
   const classes = classNames(
     'gTextField',
@@ -44,9 +48,7 @@ const TextField = React.forwardRef(
       value={value}
       readOnly={readOnly}
       className={classes}
-      ref={(elem) => {
-        elem.setCustomValidity(isInvalid ? 'Invalid' : '')
-      }}
+      ref={inputRef}
       {...props}
     />
   );

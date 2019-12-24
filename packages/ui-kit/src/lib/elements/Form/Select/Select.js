@@ -39,6 +39,10 @@ const Select = React.forwardRef(
   },
   inputRef
 ) => {
+
+  React.useEffect(() => {
+    inputRef.current.setCustomValidity(isInvalid ? 'Invalid': '')
+  })
   
   const classes = classNames(
     'gSelect',
@@ -71,9 +75,7 @@ const Select = React.forwardRef(
       defaultValue={selectDefaultValue}
       readOnly={readOnly}
       className={classes}
-      ref={(elem) => {
-        elem.setCustomValidity(isInvalid ? 'Invalid' : '')
-      }}
+      ref={inputRef}
       {...props}
     >
       {emptyOptionNode}
