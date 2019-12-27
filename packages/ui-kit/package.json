@@ -1,10 +1,10 @@
 {
   "name": "ui-kit",
-  "version": "0.0.10",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "version": "0.0.11",
+  "description": "UI Kit library",
   "keywords": [],
   "author": "ify <ifeanyioraelosi@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -26,15 +26,16 @@
     "mini-css-extract-plugin": "0.8.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.41.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "style-loader": "1.1.2",
+    "webpack": "4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
-  "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+  "peerDependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   },
   "repository": {
     "type": "git",
@@ -42,5 +43,6 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@gnerkus"
-  }
+  },
+  "dependencies": {}
 }
